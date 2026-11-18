@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0; url=https://ferb22.github.io/universo-lignum/">
-  <link rel="canonical" href="https://ferb22.github.io/universo-lignum/">
+  <link rel="canonical" href="https://ferb22.github.io/">
   <title>Universo Lignum — Biblioteca de historias de fantasía épica | Fernando Barra</title>
-  
+
   <!-- Favicon Oficial Universo Lignum en la raíz del subdominio ferb22.github.io -->
   <link rel="icon" type="image/png" sizes="192x192" href="https://ferb22.github.io/favicon-192x192.png">
   <link rel="icon" type="image/png" sizes="96x96" href="https://ferb22.github.io/favicon-96x96.png">
@@ -15,12 +14,12 @@
   <link rel="apple-touch-icon" sizes="180x180" href="https://ferb22.github.io/apple-touch-icon.png">
 
   <!-- Meta Tags SEO y Open Graph -->
-  <meta name="description" content="Portal oficial de Universo Lignum, saga literaria de fantasía épica creada por el escritor chileno Fernando Barra.">
+  <meta name="description" content="Portal oficial de Universo Lignum: saga literaria de fantasía épica creada por el escritor chileno Fernando Barra. Lee gratis novelas, cuentos completos y el archivo canónico.">
   <meta name="author" content="Fernando Barra">
   <meta property="og:site_name" content="Universo Lignum">
   <meta property="og:title" content="Universo Lignum — Biblioteca de historias de fantasía épica">
-  <meta property="og:description" content="Saga literaria de fantasía épica creada por Fernando Barra.">
-  <meta property="og:url" content="https://ferb22.github.io/universo-lignum/">
+  <meta property="og:description" content="Saga literaria de fantasía épica creada por Fernando Barra. Accede a la biblioteca oficial de novelas, cuentos y crónicas.">
+  <meta property="og:url" content="https://ferb22.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://ferb22.github.io/universo-lignum/public/og-cover.png">
 
@@ -30,19 +29,131 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Universo Lignum",
-    "alternateName": ["Lignum", "Biblioteca de historias", "Fernando Barra Escritor"],
+    "alternateName": ["Lignum", "Biblioteca Universo Lignum"],
     "url": "https://ferb22.github.io/"
   }
   </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      background-color: #07090D;
+      background-image:
+        radial-gradient(circle at 50% 25%, rgba(212, 175, 55, 0.12) 0%, transparent 60%),
+        radial-gradient(circle at 20% 80%, rgba(82, 183, 136, 0.08) 0%, transparent 55%);
+      color: #F8F6F0;
+      font-family: 'Lora', Georgia, serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .portal-card {
+      max-width: 640px;
+      width: 100%;
+      background: rgba(14, 18, 27, 0.78);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1.5px solid rgba(212, 175, 55, 0.28);
+      border-radius: 20px;
+      padding: 44px 34px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+    }
+    .portal-badge {
+      display: inline-block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: #F3E5AB;
+      background: rgba(212, 175, 55, 0.14);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: 9999px;
+      padding: 6px 16px;
+      margin-bottom: 22px;
+    }
+    .portal-logo {
+      width: 84px;
+      height: 84px;
+      border-radius: 18px;
+      margin: 0 auto 20px auto;
+      display: block;
+      box-shadow: 0 0 24px rgba(212, 175, 55, 0.25);
+    }
+    h1 {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: clamp(2rem, 4.5vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: 2.5px;
+      color: #D4AF37;
+      margin-bottom: 14px;
+    }
+    .portal-desc {
+      font-size: 1.1rem;
+      line-height: 1.85;
+      color: #CBD5E1;
+      margin-bottom: 30px;
+    }
+    .portal-cta {
+      display: inline-block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #07090D;
+      background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 100%);
+      padding: 14px 30px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3);
+    }
+    .portal-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(212, 175, 55, 0.45);
+    }
+    .portal-links {
+      margin-top: 28px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 18px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.85rem;
+    }
+    .portal-links a {
+      color: #94A3B8;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .portal-links a:hover { color: #F3E5AB; }
+  </style>
 </head>
-<body style="background-color: #07090D; color: #F8F6F0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; text-align: center;">
-  <div style="padding: 20px;">
-    <h1 style="color: #D4AF37; font-family: serif; margin-bottom: 12px; font-size: 2rem;">Universo Lignum</h1>
-    <p style="color: #94A3B8; font-size: 1.1rem;">Redirigiendo a la biblioteca oficial...</p>
-    <p><a href="https://ferb22.github.io/universo-lignum/" style="color: #D4AF37; text-decoration: underline;">Haz clic aquí si no eres redirigido automáticamente</a></p>
-  </div>
-  <script>
-    window.location.replace("https://ferb22.github.io/universo-lignum/");
-  </script>
+<body>
+  <main class="portal-card">
+    <span class="portal-badge">Portal oficial · Fernando Barra</span>
+    <img src="https://ferb22.github.io/favicon-192x192.png" alt="Logotipo de Universo Lignum" class="portal-logo">
+    <h1>Universo Lignum</h1>
+    <p class="portal-desc">
+      Saga literaria de fantasía épica escrita por el autor chileno Fernando Barra. Explora novelas, cuentos completos, fábulas morales y el archivo canónico del mundo.
+    </p>
+    <a href="https://ferb22.github.io/universo-lignum/" class="portal-cta">Entrar a la biblioteca oficial</a>
+    <nav class="portal-links" aria-label="Accesos directos">
+      <a href="https://ferb22.github.io/universo-lignum/getting-to-know/">Getting to Know</a>
+      <a href="https://ferb22.github.io/universo-lignum/forgotten-sword/">Forgotten Sword</a>
+      <a href="https://ferb22.github.io/universo-lignum/ruk-el-heroe/">Ruk el Héroe</a>
+      <a href="https://ferb22.github.io/universo-lignum/la-piedra-sin-pulir/">La Piedra sin Pulir</a>
+      <a href="https://ferb22.github.io/universo-lignum/sangre-y-cadaveres/">Sangre y Cadáveres</a>
+      <a href="https://ferb22.github.io/universo-lignum/saber-del-mundo/">El saber del mundo</a>
+    </nav>
+  </main>
 </body>
 </html>
